@@ -7,7 +7,6 @@ const controls = document.getElementById("video-controls");
 var timeout;
 // functions
 const displayControls = () => {
-  console.log("Hello");
   controls.classList.add("controls-visible");
   controls.classList.remove("controls-invisible");
   clearTimeout(timeout);
