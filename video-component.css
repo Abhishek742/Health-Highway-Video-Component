@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* video component css starts here */
+#video-component {
+  background-image: url(./images/pattern.png);
+  padding: 70px 0;
+}
+#video-title {
+  font-family: "Open-sans", sans-serif;
+  font-size: 48px;
+  font-weight: 700;
+  text-align: center;
+  position: relative;
+}
+#video-title::after {
+  content: "";
+  position: absolute;
+  bottom: -10px;
+  left: 50%;
+  margin-left: -300px;
+  width: 600px;
+  height: 5px;
+  background-color: #4ca9ee;
+}
+#video-title span {
+  color: #4ca9ee;
+}
+#video-container {
+  width: 800px;
+  margin: 100px auto;
+  position: relative;
+}
+#yogaVideo {
+  width: 100%;
+  border-radius: 8px;
+}
+#video-controls {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+button img {
+  pointer-events: none;
+}
+#video-pause,
+#video-play {
+  all: unset;
+  background-color: transparent;
+  position: absolute;
+  margin-top: -66px;
+  margin-left: -66px;
+  top: 50%;
+  left: 50%;
+  cursor: pointer;
+}
+#video-mute,
+#video-unmute {
+  all: unset;
+  background-color: transparent;
+  position: absolute;
+  left: 30px;
+  bottom: 25px;
+  cursor: pointer;
+}
+#video-controls.controls-invisible {
+  opacity: 0;
+}
+#video-controls.controls-visible {
+  opacity: 1;
+}
+#video-container .video-display {
+  display: none;
+}
+@media (max-width: 850px) {
+  #video-container {
+    width: 500px;
+    margin: 50px auto;
+    background-size: cover;
+  }
+  #video-pause,
+  #video-play {
+    margin-top: -40px;
+    margin-left: -40px;
+  }
+  #video-pause img,
+  #video-play img {
+    width: 80px;
+    height: auto;
+  }
+  #video-title {
+    font-size: 28px;
+  }
+  #video-title::after {
+    margin-left: -165px;
+    width: 350px;
+    height: 4px;
+    background-color: #4ca9ee;
+  }
+}
+@media (max-width: 550px) {
+  #video-container {
+    width: 300px;
+    margin: 50px auto;
+    background-size: cover;
+  }
+  #video-pause,
+  #video-play {
+    margin-top: -30px;
+    margin-left: -30px;
+  }
+  #video-pause img,
+  #video-play img {
+    width: 60px;
+    height: auto;
+  }
+  #video-mute,
+  #video-unmute {
+    left: 20px;
+    bottom: 15px;
+  }
+  #video-mute img,
+  #video-unmute img {
+    width: 20px;
+    height: auto;
+  }
+  #video-title {
+    font-size: 20px;
+  }
+  #video-title::after {
+    margin-left: -130px;
+    width: 280px;
+  }
+}
+@media (max-width: 320px) {
+  #video-container {
+    width: 260px;
+  }
+  #video-pause,
+  #video-play {
+    margin-top: -20px;
+    margin-left: -20px;
+  }
+  #video-pause img,
+  #video-play img {
+    width: 40px;
+    height: auto;
+  }
+  #video-title {
+    padding: 0 10px;
+    line-height: 30px;
+  }
+  #video-title::after {
+    margin-left: -110px;
+    width: 220px;
+    height: 3px;
+  }
+}

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./video-component.css" />
+    <title>Video Component</title>
+  </head>
+  <body>
+    <section id="video-component">
+      <h2 id="video-title">
+        <span>“</span>We just don't say , we <span>deliver</span> it<span
+          >”</span
+        >
+      </h2>
+      <div id="video-container">
+        <video id="yogaVideo" src="./video/Untitled.mp4" loop></video>
+        <div id="video-controls">
+          <button id="video-play">
+            <img src="./images/play_circle.svg" alt="" />
+          </button>
+          <button id="video-pause" class="video-display">
+            <!-- <button id="video-pause" class="video-display video-button-visible"> -->
+            <img src="./images/pause_circle.svg" alt="" />
+          </button>
+          <button id="video-mute">
+            <img src="./images/speaker-on.svg" alt="" />
+          </button>
+          <button id="video-unmute" class="video-display">
+            <!-- <button id="video-unmute" class="video-display video-button-visible"> -->
+            <img src="./images/speaker-off.svg" alt="" />
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <script src="./video-component.js"></script>
+  </body>
+</html>
