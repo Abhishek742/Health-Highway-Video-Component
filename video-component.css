@@ -5,6 +5,7 @@
 }
 
 /* video component css starts here */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
 #video-component {
   background-image: url(./images/pattern.png);
   padding: 70px 0;
